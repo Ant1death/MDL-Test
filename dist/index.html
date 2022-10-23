@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="dark" id="body">
+    <div class="container">
+        <div class="form-block">
+            <h1 class="title">
+                Preferences
+            </h1>
+            <h2 class="sub-title">
+                On this page you can configure the main system parameters available for customization
+            </h2>
+            <form action="" class="form">
+                <div class="form__wrapper">
+                    <div class="form__wrapper-item">
+                        <label for="" class="form__wrapper-label">Company Title</label>
+                        <input type="text" class="form__wrapper-input" placeholder="Default" value="" id="title-input">
+                    </div>
+                    <div class="form__wrapper-item">
+                        <label for="" class="form__wrapper-label">First Day</label>
+                        <span class="arrow" id="arrow-day"></span>
+                        <input name="" id="day-input" class="form__wrapper-select form__wrapper-input" disabled="true" placeholder="Default" value="">
+                        <div class="form__wrapper-dropdown" id="dropdown__day">
+                            <div class="form__wrapper-dropdown_item dropdown_day">Monday</div>
+                            <div class="form__wrapper-dropdown_item dropdown_day">Tuesday</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form__wrapper-item">
+                        <label for="" class="form__wrapper-label">Container Width</label>
+                        <span class="arrow" id="arrow-container"></span>
+                        <input name="" id="container-input" class="form__wrapper-select form__wrapper-input" disabled="true" placeholder="Default" value="">
+                        <div class="form__wrapper-dropdown" id="dropdown__container">
+                            <div class="form__wrapper-dropdown_item dropdown_container">Fixed</div>
+                            <div class="form__wrapper-dropdown_item dropdown_container">No</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form__wrapper-item">
+                        <label for="" class="form__wrapper-label">Homepage</label>
+                        <span class="arrow" id="arrow-home"></span>
+                        <input name="" id="home-input" class="form__wrapper-select form__wrapper-input" disabled="true" placeholder="Default" value="">
+                        <div class="form__wrapper-dropdown" id="dropdown__home">
+                            <div class="form__wrapper-dropdown_item dropdown_homepage">Homepage</div>
+                            <div class="form__wrapper-dropdown_item dropdown_homepage">Youtube</div>
+                        </div>
+                    </div>
+                    <div class="form__wrapper-item">
+                        <label for="" class="form__wrapper-label">Indent Size</label>
+                        <input type="number" class="form__wrapper-input form__wrapper-input" placeholder="Default" value="" id="size-input">
+                    </div>
+                    <div class="form__wrapper-item">
+                        <label for="" class="form__wrapper-label">Personal Code</label>
+                        <input type="number" class="form__wrapper-input form__wrapper-input_code" value="" id="code__first" maxlength="4">
+                        <strong class="divider">-</strong>
+                        <input type="number" class="form__wrapper-input form__wrapper-input_code" value="" id="code__second" maxlength="4">
+                        <strong class="divider">-</strong>
+                        <input type="number" class="form__wrapper-input form__wrapper-input_code" value="" id="code__third" maxlength="4">
+                    </div>
+                    <div class="form__wrapper-item">
+                        <label for="" class="form__wrapper-label">Theme</label>
+                        <div class="radio__wrapper">
+                            <div class="radio__wrapper-item">
+                                <input type="radio" class="radio__wrapper-input" id="light" name="theme" checked="true">
+                                <label for="white" class="radio__wrapper-label">Light</label value="">
+                            </div>
+                            <div class="radio__wrapper-item">
+                                <input type="radio" class="radio__wrapper-input" id="dark" name="theme">
+                                <label for="dark" class="radio__wrapper-label">Dark</label value="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn__wrapper">
+                    <button id="apply" type="button">Apply and Save</button>
+                    <button id="cancel" type="button">Cancel</button>
+                </div>
+                
+            </form>
+
+
+
+            <div class="form-block__footer">
+                <img src="assets/img/footer.png" alt="footer">
+                <div class="conditios">
+                    <div class="conditios__wrapper">
+                        <div class="conditios__wrapper-text">2020-2022</div>
+                        <a href="" class="conditios__wrapper-url">Terms of Service</a>
+                        <div class="conditios__wrapper-text">and</div>
+                        <a href="" class="conditios__wrapper-url">Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

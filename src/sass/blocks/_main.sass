@@ -1,0 +1,235 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+.container
+    width: 100%
+    max-width: 986px
+    padding: 0
+    margin: 0 auto
+.title
+    font-family: 'Ubuntu-Medium'
+    font-style: normal
+    font-weight: 500
+    font-size: 28px
+    line-height: 32px
+.sub-title
+    font-family: 'Ubuntu-Regular'
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 16px
+    margin-top: 4px
+.divider
+    margin: 0 8px
+    font-family: 'Ubuntu-Regular'
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 16px
+    width: 8px
+    height: 16px
+.form
+    margin-top: 32px
+    &-block
+        height: 1024px
+        padding: 32px 32px 25px 32px
+        position: relative
+        &__footer
+            position: absolute
+            bottom: 0
+            left: 0
+            >img
+                width: 100%
+                height: 100%
+    &__wrapper
+        display: flex
+        flex-direction: column
+        width: 316px
+        &-item
+            display: flex
+            align-items: center
+            margin-bottom: 24px
+            position: relative
+            &:nth-last-child(1)
+                margin-top: 21px
+                align-items: flex-start   
+                margin-bottom: 0px
+            &:nth-child(6)
+                &::after
+                    display: block
+                    content: '12 digits'
+                    position: absolute
+                    left: 120px
+                    bottom: -20px
+                    font-family: 'Ubuntu-Regular'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 11px
+                    line-height: 13px
+        &-label
+            font-family: 'Ubuntu-Regular'
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 16px
+            width: 120px
+            position: relative
+        &-select
+            width: 196px
+            height: 32px
+            border: none
+            font-family: 'Ubuntu-Regular'
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 16px
+            padding: 6px
+            border: 1px solid #887C7C
+            border-radius: 6px
+            cursor: pointer
+            position: relative
+            &:focus
+                outline: none
+
+        &-input
+            width: 196px
+            height: 32px
+            border: none
+            font-family: 'Ubuntu-Regular'
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 16px
+            padding: 8px
+            border: 1px solid #887C7C
+            border-radius: 6px
+            &:focus
+                outline: none
+            &_code
+                width: 49.33px
+                height: 32px
+                font-family: 'Ubuntu-Regular'
+                font-style: normal
+                font-weight: 400
+                font-size: 14px
+                line-height: 16px
+                padding: 8px
+                position: relative
+                &:focus
+                    outline: none
+                    
+.radio
+    &__wrapper
+        &-item
+            margin-top: 8px
+            display: flex
+            align-items: center
+            &:nth-child(1)
+                margin-top: 0px
+        &-label
+            margin-left: 7px
+            font-family: 'Ubuntu-Regular'
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 24px
+.btn
+    &__wrapper
+        display: flex
+        margin-top: 35px
+#apply
+    font-family: 'Ubuntu-Medium'
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 24px
+    text-align: center
+    margin-right: 16px
+    background: none
+    border: none
+    cursor: pointer
+    width: 115px
+    height: 32px
+    border-radius: 3px
+#cancel
+    font-family: 'Ubuntu-Medium'
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 24px
+    text-align: center 
+    background: none
+    border: none
+    cursor: pointer  
+    width: 60px
+    height: 32px 
+    border-radius: 3px
+.conditios
+    &__wrapper
+        position: absolute
+        bottom: 22px
+        left: 50%
+        transform: translateX(-50%)
+        display: flex
+        align-items: center
+        &-text
+            font-family: 'Montserrat-regular'
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 20px
+            display: flex
+            align-items: center
+            padding-bottom: 3px
+        &-url
+            font-family: 'Montserrat-regular'
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 17px
+            display: flex
+            align-items: center
+            margin: 0 8px
+            text-decoration: none
+            padding-bottom: 2px
+.form__wrapper-input::-webkit-outer-spin-button,
+.form__wrapper-input::-webkit-inner-spin-button
+    -webkit-appearance: none
+    margin: 0
+.form__wrapper-dropdown
+    position: absolute
+    bottom: -66px
+    left: 119px
+    width: 196px
+    border-radius: 6px
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    cursor: pointer
+    display: none
+    z-index: 1000
+.form__wrapper-dropdown.active
+    display: block
+.form__wrapper-dropdown_item
+    height: 32px
+    padding: 8px
+    cursor: pointer
+    border-radius: 6px
+    font-family: 'Ubuntu-Regular'
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 16px
+.arrow
+    border: solid black
+    border-width: 0 1px 1px 0
+    display: inline-block
+    padding: 3px
+    transform: rotate(45deg) translateY(-50%)
+    position: absolute
+    right: 15px
+    top: 45%
+    z-index: 999
+    cursor: pointer
+.arrow.active
+    transform: rotate(225deg) translateY(-50%)
+    right: 10px

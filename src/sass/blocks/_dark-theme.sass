@@ -1,0 +1,93 @@
+body.dark
+    background: #0C0D0D
+    >
+    .form
+        &-block
+            box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0531481), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0425185), 0px 20px 13px rgba(0, 0, 0, 0.035), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0274815), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.0168519)
+            background: #1E1D1D
+    .title
+        color: #F3F3F3
+    .sub-title
+        color: #DFDADA
+    .form__wrapper-label
+        color: #DFDADA
+    .form__wrapper-input
+        color: #F3F3F3
+        background: #585050
+        &:hover
+            box-shadow: inset 0px 0px 0px 100px rgba(255, 255, 255, 0.2)
+        &:focus
+            border: 1px solid #B9D5FC
+            box-shadow: none
+    .form__wrapper-item
+        &:nth-child(6)
+                &::after
+                    color: #887C7C
+    .divider
+        color: #DFDADA
+    .form__wrapper-select
+        color: #F3F3F3
+        background: #585050
+        &:hover
+            box-shadow: inset 0px 0px 0px 100px rgba(255, 255, 255, 0.2)
+        &:focus
+            border: 1px solid #B9D5FC
+    .form__wrapper-select.active
+        border: 1px solid #2A75DB
+    .arrow
+        border: 1px solid #887C7C
+        border-width: 0 1px 1px 0
+    .arrow.active
+        border: solid #B9D5FC
+        border-width: 0 1px 1px 0
+    .form__wrapper-dropdown
+        background: #424242
+    .form__wrapper-dropdown_item
+        color: #F3F3F3
+        &:hover
+            background: #585050
+    .radio__wrapper-label
+        color: #DFDADA
+    input[type="radio"] 
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+        display: inline-block
+        width: 18px
+        height: 18px
+        padding: 2px
+        background-clip: content-box
+        border: 1px solid #bbbbbb
+        background-color: none
+        border-radius: 50%
+    input[type="radio"]:checked 
+        background-color: #B9D5FC
+    #cancel
+        color: #AAC9F1
+        border-radius: 3px
+        background: #424242
+        &:hover
+            background: #424242
+            box-shadow: inset 0px 0px 0px 100px rgba(255, 255, 255, 0.2)
+            color: #AAC9F1
+        &:focus
+            background: #424242
+            border: 1px solid #B9D5FC
+            outline: none
+
+    #apply
+        color: #1E1D1D
+        background: #B9D5FC
+        border-radius: 3px
+        &:hover
+            background: #B9D5FC
+            box-shadow: inset 0px 0px 0px 100px rgba(255, 255, 255, 0.2)
+        &:focus
+            border: 1px solid #F0F6FF
+            border-radius: 3px
+            outline: none
+    .conditios__wrapper-text
+        color: #DFDADA
+    .conditios__wrapper-url
+        color: #AAC9F1
+        border-bottom: 1px solid rgba(170, 201, 241, 0.2)
